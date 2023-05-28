@@ -4,10 +4,13 @@
     Fact($no);
 
     function Fact($n){
-        for($i = 1;$i <= $n;$i++){
-            $Res = $n * $i;
+        $R = 1;
+        
+        while($n > 1){
+            $R = $R * $n;
+            $n--;
         }
 
-        echo $Res;
+        echo $R;
     }
 ?>
